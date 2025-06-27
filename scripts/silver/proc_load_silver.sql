@@ -4,6 +4,17 @@
 
 
 ------------ Create Store Procedure-------------------
+
+/*
+=> This Stored procedure performs the ETL(Extract, Transform, Load)
+process to populate the 'silver' schema tables from the
+'bronze' schema.
+
+=> Action: Truncates Silver Tables
+           Inserts transformed and cleansed data from bronze to silver tables
+=> Parameter: This stored procedure does not accept any
+    parameters or return any values.
+*/
 EXEC silver.load_silver
 
 Create OR ALTER PROCEDURE silver.load_silver AS
