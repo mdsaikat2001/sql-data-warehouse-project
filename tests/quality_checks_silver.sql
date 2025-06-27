@@ -1,3 +1,11 @@
+/*
+  -- Null or duplicate primary key
+  -- Unwanted spaces in string fields
+  -- Data standarization and consistency
+  -- Invalid data range and orders
+  -- Data consistency between related fields
+*/
+
 --[Clean, Transformation and Load(crm_cust_info) in Bronze to Silver Layer]
 --===========================================================================
 -- Check for Nulls or Duplicates in primary key
