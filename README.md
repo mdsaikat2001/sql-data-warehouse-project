@@ -1,7 +1,32 @@
-# Data Warehouse and Analytics Project
+## 📖 Project Overview
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+Welcome to the **Data Warehouse Project** repository! 🚀  
+This project showcases the end-to-end development of a modern data warehouse using **SQL Server**, following the **Medallion Architecture** (**Bronze**, **Silver**, **Gold**).  
+It simulates a real-world data engineering scenario, where data from multiple systems is consolidated, cleansed, and modeled to support analytical reporting.
+
+---
+
+### 🔍 What This Project Covers:
+
+#### 🏗️ Modern Data Architecture  
+Designed around the Medallion Architecture, the project separates raw, cleaned, and business-ready data into distinct layers to ensure **data integrity**, **traceability**, and **performance**.
+
+#### 🔄 ETL Pipelines  
+Data is ingested from **CSV files** (ERP and CRM systems) into the **Bronze layer**, transformed in the **Silver layer** for consistency and quality, and finally modeled into a **Star Schema** in the **Gold layer** for analysis.
+
+#### 🧱 Data Modeling  
+A clean and efficient **Star Schema** design powers the analytics layer. The model includes **Fact** and **Dimension** tables tailored for performance in **reporting** and **BI tools**.
+
+#### 🔗 Data Integration  
+This project demonstrates how to merge data from different sources (ERP & CRM) into a single integrated model, solving challenges like **data quality**, **normalization**, and **schema alignment**.
+
+#### ✅ Best Practices  
+The project follows industry best practices including:
+- Standardized naming conventions  
+- Layered architectural approach  
+- Modular and reusable SQL scripts  
+- Visual documentation: data flow diagrams, data model diagrams, and integration design
+
 
 ---
 ## 🏗️ Data Architecture
@@ -28,16 +53,6 @@ This project involves:
 1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
 2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
 3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
-
-🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-- SQL Development
-- Data Architect
-- Data Engineering  
-- ETL Pipeline Developer  
-- Data Modeling  
-- Data Analytics  
-
 ---
 
 ## 🛠️ Important Links & Tools:
@@ -68,19 +83,6 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 - **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 ---
-
-### BI: Analytics & Reporting (Data Analysis)
-
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
-
-For more details, refer to [docs/requirements.md](docs/requirements.md).
-
 ## 📂 Repository Structure
 ```
 data-warehouse-project/
@@ -88,11 +90,11 @@ data-warehouse-project/
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
 ├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
+│   ├── Data_integration_model.drawio   # Draw.io file shows how to model integrate
 │   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── data_flow_diagram.drawio        # Draw.io file for the data flow diagram
+│   ├── Data_model_of_star_schema.PNG   # Draw.io file for data models (star schema)
 │   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
@@ -103,9 +105,7 @@ data-warehouse-project/
 ├── tests/                              # Test scripts and quality files
 │
 ├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+
 ```
 ---
 
