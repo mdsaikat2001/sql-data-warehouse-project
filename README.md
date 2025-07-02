@@ -13,6 +13,13 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
+## Others Diagram 
+## ***Data Flow Diagram***
+![Data Flow](docs/data_flow_diagram.PNG)
+## ***Data Model of Star Schema***
+![Data Model Star Schema](docs/Data_model_of_star_schema.PNG)
+## ***Data_integration_model***
+![Data_integration_model](docs/Data_integration_model.PNG)
 ---
 ## 📖 Project Overview
 
@@ -42,7 +49,7 @@ Everything is for Free!
 - **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 - **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
 - **[Notion](https://www.notion.com/templates/sql-data-warehouse-project):** Get the Project Template from Notion
-- **[Notion Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4):** Access to All Project Phases and Tasks.
+- **[Notion Project Steps](https://www.notion.so/Data-Warehouse-Project-21b254ec764980268201fe75bd10ec77?source=copy_link):** Access to All Project Phases and Tasks.
 
 ---
 
